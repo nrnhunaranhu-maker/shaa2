@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FRAG.MN — Монголын Esport Мэдээ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700&family=Barlow+Condensed:wght@500;600;700;800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-links">
+      <a href="#" class="topbar-link active">FRAG ESPORTS</a>
+      <a href="#" class="topbar-link">FRAG ENTERTAINMENT</a>
+      <a href="#" class="topbar-link">FRAG BATTLES</a>
+    </div>
+    <div class="topbar-right">
+      <a href="#" class="topbar-icon">🔔</a>
+      <a href="#" class="topbar-icon">👤</a>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="header-inner">
+    <!-- LOGO -->
+    <a href="#" class="logo">
+      <div class="logo-icon">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+          <polygon points="16,2 30,10 30,22 16,30 2,22 2,10" fill="#e8132a"/>
+          <text x="16" y="21" text-anchor="middle" font-family="Barlow" font-weight="900" font-size="14" fill="white">F</text>
+        </svg>
+      </div>
+      <div class="logo-text-wrap">
+        <span class="logo-main">FRAG</span>
+        <span class="logo-sub-word">.MN</span>
+      </div>
+    </a>
+
+    <!-- MAIN NAV -->
+    <nav class="main-nav">
+      <a href="#" class="nav-item active">ТОГЛООМ</a>
+      <a href="#" class="nav-item">МЭДЭЭ</a>
+      <a href="#" class="nav-item">ТЭМЦЭЭН</a>
+      <a href="#" class="nav-item">ТОГЛОЛТ</a>
+      <a href="#" class="nav-item">RANKINGS</a>
+    </nav>
+
+    <!-- SEARCH -->
+    <div class="header-search">
+      <input type="text" placeholder="Хайх..." />
+      <button>🔍</button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO BANNER -->
+<div class="hero-banner">
+  <div class="hero-banner-bg">
+    <div class="banner-gradient-left"></div>
+    <div class="banner-gradient-right"></div>
+    <div class="banner-characters">
+      <!-- Left side decorative gamers silhouette via CSS -->
+      <div class="banner-char left-chars"></div>
+      <div class="banner-logo-center">
+        <div class="banner-logo-icon">
+          <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+            <polygon points="30,3 57,18 57,42 30,57 3,42 3,18" fill="#e8132a" opacity="0.95"/>
+            <text x="30" y="40" text-anchor="middle" font-family="Barlow" font-weight="900" font-size="26" fill="white">F</text>
+          </svg>
+        </div>
+        <div class="banner-name">
+          <span class="bn-frag">FRAG</span>
+          <span class="bn-mn">.MN</span>
+        </div>
+      </div>
+      <div class="banner-char right-chars"></div>
+    </div>
+    <div class="banner-particles">
+      <div class="particle" style="left:15%;top:20%;animation-delay:0s"></div>
+      <div class="particle" style="left:25%;top:60%;animation-delay:0.4s"></div>
+      <div class="particle" style="left:70%;top:30%;animation-delay:0.8s"></div>
+      <div class="particle" style="left:80%;top:70%;animation-delay:1.2s"></div>
+      <div class="particle" style="left:45%;top:15%;animation-delay:0.6s"></div>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN BODY -->
+<div class="page-body">
+  <div class="page-inner">
+
+    <!-- LEFT: SCHEDULE -->
+    <aside class="schedule-panel">
+      <div class="panel-tabs">
+        <button class="panel-tab active" data-tab="schedule">ХУВААРЬ</button>
+        <button class="panel-tab" data-tab="results">ҮР ДҮН</button>
+      </div>
+
+      <div class="schedule-list" id="schedule-list">
+
+        <div class="match-group">
+          <div class="match-tournament">
+            <div class="match-game-logo cs2-logo">CS</div>
+            <span class="match-tourney-name">MEF Spring Championship</span>
+            <span class="live-badge">ШУУД</span>
+          </div>
+          <div class="match-row">
+            <div class="match-team">
+              <div class="team-logo t1">MW</div>
+              <span>Mongolian Wolves</span>
+            </div>
+            <span class="vs-sep">VS</span>
+            <div class="match-team right">
+              <span>SteppeForce</span>
+              <div class="team-logo t2">SF</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="match-group">
+          <div class="match-tournament">
+            <div class="match-game-logo dota-logo">D2</div>
+            <span class="match-tourney-name">ESL One Mongolia Qualifier</span>
+            <span class="live-badge">ШУУД</span>
+          </div>
+          <div class="match-row">
+            <div class="match-team">
+              <div class="team-logo t3">BW</div>
+              <span>Black Wind</span>
+            </div>
+            <span class="vs-sep">VS</span>
+            <div class="match-team right">
+              <span>Dragon Fire</span>
+              <div class="team-logo t4">DF</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="match-group">
+          <div class="match-tournament">
+            <div class="match-game-logo vlr-logo">VL</div>
+            <span class="match-tourney-name">VCT Mongolia Qualifier S2</span>
+            <span class="upcoming-badge">15:00</span>
+          </div>
+          <div class="match-row">
+            <div class="match-team">
+              <div class="team-logo t5">MS</div>
+              <span>Mongolian Storm</span>
+            </div>
+            <span class="vs-sep">VS</span>
+            <div class="match-team right">
+              <span>Steppe Eagles</span>
+              <div class="team-logo t6">SE</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="match-group">
+          <div class="match-tournament">
+            <div class="match-game-logo lol-logo">LoL</div>
+            <span class="match-tourney-name">LoL Esports World Cup 2026</span>
+            <span class="live-badge">ШУУД</span>
+          </div>
+          <div class="match-row">
+            <div class="match-team">
+              <div class="team-logo t7">KT</div>
+              <span>KT Rolster</span>
+            </div>
+            <span class="vs-sep">VS</span>
+            <div class="match-team right">
+              <span>BLG</span>
+              <div class="team-logo t8">BL</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="match-group">
+          <div class="match-tournament">
+            <div class="match-game-logo mob-logo">ML</div>
+            <span class="match-tourney-name">MLBB Mongolia Cup Season 3</span>
+            <span class="upcoming-badge">18:00</span>
+          </div>
+          <div class="match-row">
+            <div class="match-team">
+              <div class="team-logo t9">GS</div>
+              <span>GoldenSword</span>
+            </div>
+            <span class="vs-sep">VS</span>
+            <div class="match-team right">
+              <span>Nomad Kings</span>
+              <div class="team-logo t10">NK</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </aside>
+
+    <!-- CENTER: MAIN NEWS -->
+    <section class="center-feed">
+
+      <!-- HERO ARTICLE -->
+      <div class="hero-article">
+        <div class="hero-art-img">
+          <div class="hero-art-bg" style="background: linear-gradient(135deg, #0a0a0f 0%, #1a0d00 40%, #2a0000 100%);">
+            <div class="hero-art-overlay-text">CS2</div>
+            <div class="hero-art-gfx"></div>
+          </div>
+          <div class="hero-art-overlay"></div>
+          <div class="hero-art-content">
+            <div class="hero-art-category">
+              <span class="cat-icon">🎮</span> CS2
+            </div>
+            <h1 class="hero-art-title">Mongolian Wolves CS2 тим IEM Katowice 2026-д оролцох эрхээ авлаа — Монголын esport-ын түүхэн амжилт</h1>
+            <div class="hero-art-meta">
+              <span class="art-author">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Ccircle cx='10' cy='10' r='10' fill='%23444'/%3E%3C/svg%3E" class="author-avatar" />
+                Б.Ганбат
+              </span>
+              <span class="art-date">2026 оны 5-р сарын 4</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SUB GRID -->
+      <div class="sub-grid">
+        <div class="sub-article">
+          <div class="sub-art-img" style="background: linear-gradient(135deg, #0a1500 0%, #1a3300 100%);">
+            <div class="sub-art-bg-text">D2</div>
+            <div class="sub-art-label">DOTA 2</div>
+          </div>
+          <div class="sub-art-body">
+            <div class="sub-art-cat">Dota 2</div>
+            <h3>ESL One 2026-д Монголын баг top-8 орлоо — тэмцээний түүхэн дэх анхны удаа</h3>
+            <div class="sub-art-meta">
+              <span>Д.Мөнхбат</span>
+              <span>2026.05.03</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="sub-article">
+          <div class="sub-art-img" style="background: linear-gradient(135deg, #150000 0%, #330000 100%);">
+            <div class="sub-art-bg-text">VLR</div>
+            <div class="sub-art-label valorant">VALORANT</div>
+          </div>
+          <div class="sub-art-body">
+            <div class="sub-art-cat valorant">Valorant</div>
+            <h3>VCT 2026 Монголын qualifier эхэллээ — 24 баг оролцоход бэлэн</h3>
+            <div class="sub-art-meta">
+              <span>О.Сарнай</span>
+              <span>2026.05.02</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MORE NEWS LIST -->
+      <div class="more-news-section">
+        <div class="more-news-header">
+          <h2 class="more-news-title">Ерөнхий мэдээ</h2>
+          <a href="#" class="see-all">БҮГДИЙГ ХАРАХ →</a>
+        </div>
+        <div class="more-news-grid">
+
+          <div class="news-card">
+            <div class="news-card-img" style="background:linear-gradient(135deg,#0a0a1a,#1a1a33)">
+              <span class="nc-game">CS2</span>
+            </div>
+            <div class="news-card-body">
+              <div class="nc-cat cs2-cat">CS2</div>
+              <h4>FACEIT Major 2026-д Монголын тоглогч анх удаа бие даан оролцлоо</h4>
+              <div class="nc-meta">Б.Ганбат · 2026.05.04</div>
+            </div>
+          </div>
+
+          <div class="news-card">
+            <div class="news-card-img" style="background:linear-gradient(135deg,#001500,#003300)">
+              <span class="nc-game">D2</span>
+            </div>
+            <div class="news-card-body">
+              <div class="nc-cat dota-cat">DOTA 2</div>
+              <h4>Team Liquid Монголын 2 тоглогчтой гэрээ байгуулах санал тавьжээ</h4>
+              <div class="nc-meta">Д.Мөнхбат · 2026.05.04</div>
+            </div>
+          </div>
+
+          <div class="news-card">
+            <div class="news-card-img" style="background:linear-gradient(135deg,#150010,#330028)">
+              <span class="nc-game">VLR</span>
+            </div>
+            <div class="news-card-body">
+              <div class="nc-cat vlr-cat">VALORANT</div>
+              <h4>Mongolian Storm Valorant баг Pacific League-д дэвшиж ороод байна</h4>
+              <div class="nc-meta">О.Сарнай · 2026.05.03</div>
+            </div>
+          </div>
+
+          <div class="news-card">
+            <div class="news-card-img" style="background:linear-gradient(135deg,#00101a,#002233)">
+              <span class="nc-game">ML</span>
+            </div>
+            <div class="news-card-body">
+              <div class="nc-cat mob-cat">MOBILE</div>
+              <h4>MLBB M7 World Championship — Монголын төлөөлөгч бэлтгэлээ эхэллээ</h4>
+              <div class="nc-meta">Б.Нарандэлгэр · 2026.05.03</div>
+            </div>
+          </div>
+
+          <div class="news-card">
+            <div class="news-card-img" style="background:linear-gradient(135deg,#1a0a00,#331500)">
+              <span class="nc-game">⚡</span>
+            </div>
+            <div class="news-card-body">
+              <div class="nc-cat general-cat">ТЭМЦЭЭН</div>
+              <h4>MEF Монголын Esport Аварга 2026 — шагналын сан $50,000 болж нэмэгдлээ</h4>
+              <div class="nc-meta">Редакц · 2026.05.02</div>
+            </div>
+          </div>
+
+          <div class="news-card">
+            <div class="news-card-img" style="background:linear-gradient(135deg,#0a0015,#1a0033)">
+              <span class="nc-game">🏆</span>
+            </div>
+            <div class="news-card-body">
+              <div class="nc-cat cs2-cat">CS2</div>
+              <h4>G2 Esports Монголын стример FragKing-г бренд элчээр томиллоо</h4>
+              <div class="nc-meta">Х.Болд · 2026.05.01</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- RIGHT: HEADLINES + SIDEBAR -->
+    <aside class="right-panel">
+
+      <!-- TOP HEADLINES -->
+      <div class="rp-widget">
+        <div class="rp-widget-header">
+          <div class="rp-logo">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <polygon points="10,1 19,5.5 19,14.5 10,19 1,14.5 1,5.5" fill="#e8132a"/>
+              <text x="10" y="14" text-anchor="middle" font-family="Barlow" font-weight="900" font-size="9" fill="white">F</text>
+            </svg>
+          </div>
+          <span class="rp-widget-title">Шилдэг мэдээ</span>
+        </div>
+        <div class="headlines-list">
+          <a href="#" class="headline-item">
+            <span class="hl-num">01</span>
+            <span class="hl-text">Mongolian Wolves IEM Katowice 2026-д шалгарлаа — $1M шагналын сангийн тэмцээн</span>
+          </a>
+          <a href="#" class="headline-item">
+            <span class="hl-num">02</span>
+            <span class="hl-text">Team Liquid Монголын тоглогч скаутлаж байна — CS2-ийн дэлхийн тэргүүний баг</span>
+          </a>
+          <a href="#" class="headline-item">
+            <span class="hl-num">03</span>
+            <span class="hl-text">VCT 2026 Pacific Монголын qualifier үр дүн: 8 баг шалгарлаа</span>
+          </a>
+          <a href="#" class="headline-item">
+            <span class="hl-num">04</span>
+            <span class="hl-text">MEF Монголын Esport Аварга шагналын сан $50,000 болгон нэмэгдүүллээ</span>
+          </a>
+          <a href="#" class="headline-item">
+            <span class="hl-num">05</span>
+            <span class="hl-text">MLBB Mongolia Cup Season 3 бүртгэл нээгдлээ — 32 баг оролцох боломжтой</span>
+          </a>
+          <a href="#" class="headline-item">
+            <span class="hl-num">06</span>
+            <span class="hl-text">G2 Esports Монголын контент бүтээгч FragKing-тай гэрээ байгуулжээ</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- TOP PLAYERS -->
+      <div class="rp-widget">
+        <div class="rp-widget-header">
+          <span class="rp-widget-title">🏅 Топ тоглогч</span>
+        </div>
+        <div class="top-players">
+          <div class="tp-item">
+            <span class="tp-rank">#1</span>
+            <div class="tp-ava" style="background:linear-gradient(135deg,#c0392b,#7b241c)">BK</div>
+            <div class="tp-info">
+              <div class="tp-name">B.Khurelbat</div>
+              <div class="tp-detail">CS2 • FACEIT Lv10 • 2847 ELO</div>
+            </div>
+          </div>
+          <div class="tp-item">
+            <span class="tp-rank">#2</span>
+            <div class="tp-ava" style="background:linear-gradient(135deg,#1a5276,#154360)">GM</div>
+            <div class="tp-info">
+              <div class="tp-name">G.Munkh</div>
+              <div class="tp-detail">Dota 2 • Immortal • 9124 MMR</div>
+            </div>
+          </div>
+          <div class="tp-item">
+            <span class="tp-rank">#3</span>
+            <div class="tp-ava" style="background:linear-gradient(135deg,#b7950b,#7d6608)">DS</div>
+            <div class="tp-info">
+              <div class="tp-name">D.Sarnai</div>
+              <div class="tp-detail">Valorant • Radiant • 1980 RR</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- UPCOMING EVENTS -->
+      <div class="rp-widget">
+        <div class="rp-widget-header">
+          <span class="rp-widget-title">📅 Удахгүй болох</span>
+        </div>
+        <div class="upcoming-events">
+          <div class="ue-item">
+            <div class="ue-date">
+              <span class="ue-d">10</span>
+              <span class="ue-m">МАЙ</span>
+            </div>
+            <div class="ue-info">
+              <div class="ue-name">MEF Spring Championship</div>
+              <div class="ue-sub">CS2 · $15,000 prize pool</div>
+            </div>
+          </div>
+          <div class="ue-item">
+            <div class="ue-date vlr-date">
+              <span class="ue-d">15</span>
+              <span class="ue-m">МАЙ</span>
+            </div>
+            <div class="ue-info">
+              <div class="ue-name">VCT Mongolia Qualifier</div>
+              <div class="ue-sub">Valorant · Online</div>
+            </div>
+          </div>
+          <div class="ue-item">
+            <div class="ue-date dota-date">
+              <span class="ue-d">22</span>
+              <span class="ue-m">МАЙ</span>
+            </div>
+            <div class="ue-info">
+              <div class="ue-name">Mongolian Dota 2 Cup</div>
+              <div class="ue-sub">Dota 2 · $8,000 prize pool</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SOCIAL FOLLOW -->
+      <div class="rp-widget socials-widget">
+        <div class="rp-widget-header">
+          <span class="rp-widget-title">📢 Дагах</span>
+        </div>
+        <div class="social-btns">
+          <a href="#" class="soc-btn yt">▶ YouTube <em>12.4K</em></a>
+          <a href="#" class="soc-btn dc">⚡ Discord <em>8.1K</em></a>
+          <a href="#" class="soc-btn tw">𝕏 Twitter <em>5.3K</em></a>
+          <a href="#" class="soc-btn ttv">● Twitch <em>3.9K</em></a>
+        </div>
+      </div>
+
+    </aside>
+
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+        <polygon points="14,1 27,7.5 27,20.5 14,27 1,20.5 1,7.5" fill="#e8132a"/>
+        <text x="14" y="19" text-anchor="middle" font-family="Barlow" font-weight="900" font-size="12" fill="white">F</text>
+      </svg>
+      <span>FRAG.MN</span>
+    </div>
+    <div class="footer-links">
+      <a href="#">Бидний тухай</a>
+      <a href="#">Холбоо барих</a>
+      <a href="#">Нийтлэлийн дүрэм</a>
+      <a href="#">Зар сурталчилгаа</a>
+    </div>
+    <div class="footer-copy">© 2026 FRAG.MN — Монголын Esport Мэдээний Сүлжээ</div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
